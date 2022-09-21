@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100vh;
+  background-color: #222;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.title {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: #222;
+  font-style: italic;
+  text-align: center;
+}
+
+.images {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 120vh;
+}
+
+.clicks {
+  position: absolute;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .clicks {
+    position: relative;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: unset;
+  }
+}
+
+.image:active {
+  transform: scale(1.1);
+}
+
+.count {
+  font-size: 2rem;
+
+}
+
+
+@media (prefers-color-scheme: dark) {}
