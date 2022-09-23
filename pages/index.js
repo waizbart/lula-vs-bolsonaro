@@ -49,7 +49,7 @@ export default function Home() {
 
       <Box className={styles.main}>
         <Box display={"flex"} className={styles.images}>
-          <Box as="button" onClick={() => incrementLula()}>
+          <Box as="button" onClick={() => /*incrementLula()*/}>
             <Image
               unselectable='on'
               src="/lula.jpg"
@@ -93,7 +93,7 @@ export default function Home() {
                   color: counterLula > counterBolsonaro ? "green" : counterLula == counterBolsonaro ? "yellow" : "red",
                 }}
               >
-                {counterLula}
+                {/*counterLula*/}Lula punido por uso de autoclick
               </Box>
               <Box
                 style={{
